@@ -1,0 +1,30 @@
+import Article from '../../layouts/article'
+
+<Article>
+
+# Plotting Moving Averages
+
+In this article we'll plot some moving averages.
+
+I won't go into too much detail about moving averages, there are lots of resources out there already.
+The average part of a moving average is pretty simple, add up all the numbers in a series, then divide by the number of items.
+If the series you use is, let's say, the closing price of a stock on each of the previous 100 days, then you'll have a value for today 
+that's the average price of the previous day. If you do that again tomorrow, the next day, etc. and you plot those averages, you have
+a moving average.
+
+What i described is a simple moving average, but there are other more complex forms. The exponential moving average gives more importance
+to the most recent days.
+
+## Simple Moving Average (SMA)
+
+The pinescript ```sma()``` function calculates the simple moving average given a series, and a number of previous values to average over.
+For example, ```sma(close, 20)``` computes the simple moving average of closing prices where each value is the average of the previous 
+20 bars.
+
+|   Function    |   Example             |
+|---------------|-----------------------|
+|   ```sma()``` | ```sma(close, 20)```  |
+|   ema()       |   ema(close, 20)  |
+|   wma()       |   wma(close, 20)  |
+
+</Article>
