@@ -1,8 +1,8 @@
-import Article from '../layouts/article'
-
-<Article>
-
-# Define a Backtest Window
+export const meta = {
+  title: 'Define a Backtest Window',
+  description: 'Define a start and end date within which to backtest a strategy',
+  layout: 'Article'
+}
 
 By default, when backtesting a strategy, all bars are taken into account.
 If you want to look at the performance over a specific time frame you need to
@@ -29,5 +29,3 @@ windowEnd = timestamp(ToYear, ToMonth, ToDay, 23, 59)
 # current bar is within the start and end dates
 inTimeWindow = time >= windowStart and time <= windowEnd
 ```
-
-</Article>

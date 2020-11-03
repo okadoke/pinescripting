@@ -1,11 +1,13 @@
-const rehypePrism = require("@mapbox/rehype-prism");
-const withMDX = require("@next/mdx")({
+const mdxPrism = require("mdx-prism")
+const withMDX = require('@next/mdx')({
+  // mdx options go here
   extension: /\.mdx?$/,
   options: {
-    rehypePlugins: [rehypePrism],
-  },
-});
+    rehypePlugins: [mdxPrism]
+  }
+})
 
 module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "md", "mdx"],
-});
+  // next options go here
+  pageExtensions: ['md', 'mdx', 'jsx', 'js', 'ts', 'tsx']
+})

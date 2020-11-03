@@ -8,12 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mapbox/rehype-prism": "^0.5.0",
-    "@mdx-js/loader": "^1.6.11",
+    "@mdx-js/loader": "^1.6.13",
     "@next/mdx": "^9.4.4",
     "@tailwindcss/typography": "^0.2.0",
+    "mdx-prism": "^0.3.1",
     "next": "9.4.4",
+    "prismjs": "^1.20.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "rehype": "^11.0.0",
+    "tailwindcss": "^1.5.1"
   }
 }
